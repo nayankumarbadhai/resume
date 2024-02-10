@@ -48,7 +48,5 @@ a.btn.btn-secondary:hover{
     transition: all 0.4s;
 }
 body{
-     background: scroll;
-    background-image: url(bg.png);
-    background-position: center;
+    background-color: rgb(173, 107, 199);
 }
