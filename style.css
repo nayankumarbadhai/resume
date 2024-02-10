@@ -50,3 +50,8 @@ a.btn.btn-secondary:hover{
 body{
     background-color: rgb(182, 131, 202);
 }
+
+div.card-body:hover{
+    background-color: rgb(187, 226, 114);
+    transform: scale(1.1);
+    transition: all 0.5s;
