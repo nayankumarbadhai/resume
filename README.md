@@ -1,2 +1,1 @@
-# resume
-My Resume 
+This is my portfolio, if you want to do work with me then please visit the portfolio website.
