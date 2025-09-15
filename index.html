@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayan Kumar Badhai - Full Stack Developer</title>
+    <meta name="description" content="Full Stack Developer specializing in React, Node.js, and modern web technologies">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="#home" class="nav__logo">Portfolio</a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="nav__close-icon">&times;</i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <span class="nav__hamburger"></span>
+                    <span class="nav__hamburger"></span>
+                    <span class="nav__hamburger"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            Hi, I'm <span class="hero__name">Nayan Kumar Badhai</span>
+                        </h1>
+                        <h2 class="hero__subtitle">Full Stack Developer</h2>
+                        <p class="hero__description">
+                            Building modern web applications with cutting-edge technologies
+                        </p>
+                        <div class="hero__buttons">
+                            <a href="#projects" class="btn btn--primary hero__btn">View Projects</a>
+                            <a href="#contact" class="btn btn--outline hero__btn">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="hero__image">
+                        <div class="hero__avatar">
+                            <div class="hero__avatar-circle"></div>
+                            <img src="nkb.png" width="1000 " height="350" loading="eager">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section__title">About Me</h2>
+                <p class="section__subtitle">Get to know me better</p>
+                
+                <div class="about__container">
+                    <div class="about__content">
+                        <div class="about__info">
+                            <h3 class="about__title">Professional Journey</h3>
+                            <p class="about__description">
+                                Passionate full stack developer with 1+ years of experience creating robust, 
+                                scalable web applications. Specialized in React, Node.js, and cloud technologies.
+                            </p>
+                            <p class="about__description">
+                                I love turning complex problems into simple, beautiful designs. When I'm not 
+                                coding, you'll find me exploring new technologies and contributing to open-source projects.
+                            </p>
+                            <div class="about__details">
+                                <div class="about__detail">
+                                    <span class="about__detail-title">Location:</span>
+                                    <span class="about__detail-info">Sambalpur, Odisha</span>
+                                </div>
+                                <div class="about__detail">
+                                    <span class="about__detail-title">Status:</span>
+                                    <span class="about__detail-info">Open to new opportunities</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn--primary about__resume">Download Resume</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section__title">Skills</h2>
+                <p class="section__subtitle">My technical expertise</p>
+                
+                <div class="skills__container">
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">Frontend</h3>
+                        <div class="skills__list" id="frontend-skills">
+                            <!-- Skills will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">Backend</h3>
+                        <div class="skills__list" id="backend-skills">
+                            <!-- Skills will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">Database</h3>
+                        <div class="skills__list" id="database-skills">
+                            <!-- Skills will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">Tools</h3>
+                        <div class="skills__list" id="tools-skills">
+                            <!-- Skills will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section__title">Projects</h2>
+                <p class="section__subtitle">Featured work and creations</p>
+                
+                <div class="projects__filters">
+                    <button class="projects__filter active" data-filter="all">All</button>
+                    <button class="projects__filter" data-filter="frontend">Frontend</button>
+                    <button class="projects__filter" data-filter="backend">Backend</button>
+                    <button class="projects__filter" data-filter="fullstack">Full Stack</button>
+                </div>
+                
+                <div class="projects__container" id="projects-container">
+                    <!-- Projects will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title">Contact Me</h2>
+                <p class="section__subtitle">Let's work together</p>
+                
+                <div class="contact__container">
+                    <div class="contact__content">
+                        <div class="contact__info">
+                            <h3 class="contact__title">Get In Touch</h3>
+                            <p class="contact__description">
+                                Have a project in mind? Let's discuss how we can work together 
+                                to bring your ideas to life.
+                            </p>
+                            
+                            <div class="contact__details">
+                                <div class="contact__detail">
+                                    <span class="contact__icon">📧</span>
+                                    <div>
+                                        <span class="contact__detail-title">Email</span>
+                                        <span class="contact__detail-info">nayanbadhai12@email.com</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact__detail">
+                                    <span class="contact__icon">📍</span>
+                                    <div>
+                                        <span class="contact__detail-title">Location</span>
+                                        <span class="contact__detail-info">Sambalpur, Odisha</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact__social">
+                                <h4 class="contact__social-title">Follow Me</h4>
+                                <div class="contact__social-links">
+                                    <a href="https://github.com/alexjohnson" class="contact__social-link" target="_blank" aria-label="GitHub">
+                                        <span class="contact__social-icon">📁</span>
+                                    </a>
+                                    <a href="https://linkedin.com/in/alexjohnson" class="contact__social-link" target="_blank" aria-label="LinkedIn">
+                                        <span class="contact__social-icon">💼</span>
+                                    </a>
+                                    <a href="https://twitter.com/alexjohnson" class="contact__social-link" target="_blank" aria-label="Twitter">
+                                        <span class="contact__social-icon">🐦</span>
+                                    </a>
+                                    <a href="mailto:alex.johnson@email.com" class="contact__social-link" aria-label="Email">
+                                        <span class="contact__social-icon">📧</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__form">
+                            <form class="form" id="contact-form">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">Name *</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                    <span class="form-error" id="name-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email *</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <span class="form-error" id="email-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="subject">Subject *</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
+                                    <span class="form-error" id="subject-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="message">Message *</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                    <span class="form-error" id="message-error"></span>
+                                </div>
+                                
+                                <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3 class="footer__title">Nayan Kumar Badhai</h3>
+                    <p class="footer__description">
+                        Full Stack Developer passionate about creating amazing web experiences.
+                    </p>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__section">
+                        <h4 class="footer__section-title">Quick Links</h4>
+                        <ul class="footer__list">
+                            <li><a href="#home" class="footer__link">Home</a></li>
+                            <li><a href="#about" class="footer__link">About</a></li>
+                            <li><a href="#skills" class="footer__link">Skills</a></li>
+                            <li><a href="#projects" class="footer__link">Projects</a></li>
+                            <li><a href="#contact" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__section-title">Connect</h4>
+                        <div class="footer__social">
+                            <a href="https://github.com/nayankumarbadhai" class="footer__social-link" target="_blank">GitHub</a>
+                            <a href="https://www.linkedin.com/in/nayankumarbadhai/" class="footer__social-link" target="_blank">LinkedIn</a>
+                            <a href="https://twitter.com/nayankumarbadhai" class="footer__social-link" target="_blank">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2025 Nayan Kumar Badhai. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <span class="scroll-top__icon">↑</span>
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>
